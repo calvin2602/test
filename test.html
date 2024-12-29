@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Kick - Blindenfußball Podcast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background: #444;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        nav a:hover, nav a:focus {
+            background-color: #555;
+        }
+
+        /* Hauptbereich */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .episode {
+            display: flex;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .episode img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .episode-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .episode-info h3 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .episode-info p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .episode-info .more-info {
+            display: none;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .episode-info button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .episode-info button:hover {
+            background-color: #777;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .impressum {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .impressum a {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        /* Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #ffffff;
+            }
+
+            header, footer {
+                background: #1e1e1e;
+            }
+
+            nav a {
+                color: #bb86fc;
+            }
+
+            nav a:hover {
+                background-color: #bb86fc;
+            }
+
+            .episode {
+                background-color: #333;
+                color: #fff;
+            }
+
+            .episode-info .more-info {
+                color: #bbb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blind Kick - Der Blindenfußball Podcast</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" accesskey="1">Über Uns</a></li>
+            <li><a href="#episodes" accesskey="2">Episoden</a></li>
+            <li><a href="#contact" accesskey="3">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>Über Blind Kick</h2>
+            <p>Willkommen bei Blind Kick, dem Podcast rund um Blindenfußball. Erlebe spannende Geschichten und Interviews mit Spielern und Trainern.</p>
+        </section>
+
+        <section id="episodes">
+            <h2>Aktuelle Episoden</h2>
+            <article class="episode">
+                <img src="path/to/your/image1.jpg" alt="Bild für Episode 10" />
+                <div class="episode-info">
+                    <h3>Episode 10 - Das große Turnier</h3>
+                    <p>In dieser Folge sprechen wir mit dem Trainer des FC St. Pauli Blindenfußballteams.</p>
+                    <audio controls>
+                        <source src="audio/episode10.mp3" type="audio/mpeg">
+                        Ihr Browser unterstützt das Audio-Element nicht.
+                    </audio>
+                    <div class="more-info">
+                        <p>In dieser Episode erfahren Sie, wie das Blindenfußball-Team von FC St. Pauli die Vorbereitung auf das große Turnier gemeistert hat und welche besonderen Herausforderungen sie dabei überwinden mussten.</p>
+                    </div>
+                    <button onclick="toggleMoreInfo(this)">Mehr Details anzeigen</button>
+                </div>
+            </article>
+
+            <article class="episode">
+                <img src="Calvin2602.JPG" alt="Bild für Episode 9" />
+                <div class="episode-info">
+                    <h3>Episode 9 - Technik und Taktik</h3>
+                    <p>Ein tiefer Einblick in die Spieltechniken und Strategien im Blindenfußball.</p>
+                    <audio controls>
+                        <source src="episode9.mp3" type="audio/mpeg">
+                        Ihr Browser unterstützt das Audio-Element nicht.
+                    </audio>
+                    <div class="more-info">
+                        <p>Erfahren Sie mehr über die technischen Fertigkeiten, die für das Spiel entscheidend sind, und welche Taktiken die besten Teams anwenden, um den Sieg zu erringen.</p>
+                    </div>
+                    <button onclick="toggleMoreInfo(this)">Mehr Details anzeigen</button>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Fragen oder Feedback? Schreib uns eine E-Mail an <a href="mailto:kontakt@blindkick.de">kontakt@blindkick.de</a></p>
+        </section>
+
+        <!-- Impressum -->
+        <section id="impressum" class="impressum">
+            <h2>Impressum</h2>
+            <p>Angaben gemäß § 5 TMG:</p>
+            <p><strong>Blind Kick GmbH</strong><br>
+            Musterstraße 123, 12345 Musterstadt<br>
+            Geschäftsführer: Max Mustermann<br>
+            Kontakt: <a href="mailto:kontakt@blindkick.de">kontakt@blindkick.de</a><br>
+            Telefon: +49 123 456789</p>
+            <p>Haftungsausschluss: Alle Inhalte auf dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blind Kick</p>
+    </footer>
+
+    <script>
+        function toggleMoreInfo(button) {
+            const moreInfo = button.previousElementSibling;
+            if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                moreInfo.style.display = "block";
+                button.textContent = "Weniger Details anzeigen";
+            } else {
+                moreInfo.style.display = "none";
+                button.textContent = "Mehr Details anzeigen";
+            }
+        }
+    </script>
+</body>
+</html>
